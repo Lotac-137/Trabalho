@@ -1,0 +1,374 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+header{
+    width: 100%;
+    height: 100%;
+    background-image: url(../Imagens/Group\ 2.png) ; 
+    background-position: center; /*colocar um fade depois */
+    background-size: cover;
+}
+
+a{
+    text-decoration: none;
+}
+
+header .menu{
+    background: linear-gradient(180deg, #000000 50%, rgba(0, 0, 0, 0) 101.88%);
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    top: 0;
+    z-index: 1;
+}
+
+header .menu li{
+    display: inline-block;
+}
+
+header .menu a{
+    color: aliceblue;
+    padding: 8px 12px;
+    border-radius: 3px;
+    transition: 200ms;
+}
+
+header .menu .ativo, header .menu a:hover{
+    color: #444;
+    background-color: #ffffff;
+}
+
+header .menu .logo:hover{
+    color: #6A68A6;
+    background-color: #ffffff;
+    animation-duration: inherit;
+}
+
+header .menu .logo{
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate
+{
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%
+    {
+        color: #000;
+        text-shadow: none;
+    }
+    18.1%,20.1%,30%,50%,60.1%,80.1%,90%,92.1%,100%
+    {
+        color: #fff;
+        text-shadow: 0 0 5px #332973;
+        0 0 20px #03bcf4;
+        0 0 40px #03bcf4;
+        0 0 80px #03bcf4;
+        0 0 160px #03bcf4;
+        /* Alguma coisa estar dando erro, mas a página funciona perfeitamente*/  
+    }
+}
+
+.principal{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.principal h2{
+    color: aliceblue;
+    font-size: 45px;
+    margin: 30px;
+}
+
+.principal p{
+    color: aliceblue;
+    font-size: 18px;
+    line-height: 1.5rem;
+    margin: 30px 500px 30px 500px;
+    }
+
+.bnt{
+    display: inline-block;
+    background-color: #ffffff;
+    color: #444;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: 200ms;
+    margin: 8px;
+}
+.bnt:hover{
+    transform: scale(1.3);
+    color: #6A68A6;
+    background-color: #ffffff;
+}
+
+img {
+align-items: center;
+justify-items: center;
+}
+
+footer {
+    background: linear-gradient(360deg, #000000 50%, rgba(0, 0, 0, 0) 100%);
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    text-align: center;    
+  }
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+.icons img{
+    margin: 4px;
+}
+
+.icons img:hover{
+    transform: scale(1.3);
+    transition: 200ms;
+}
+
+.prj1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.background img{
+    width: 430px;
+    height: auto;
+}
+
+.text-sobre{
+    width: 550px;
+}
+
+.main-sobre{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 1130px;
+    margin: 0 auto;
+}
+
+.text-sobre h2{
+    color: #ffffff;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 22px;
+
+}
+
+.background{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.but{
+    display: inline-block;
+    background-color: #ffffff;
+    color: #444;
+    text-decoration: none;
+    outline: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: 200ms;
+    margin: 25px 0px 25px 0px;
+}
+.but:hover{
+    transform: scale(1.1);
+    color: #6A68A6;
+    background-color: #ffffff;
+}
+
+.text-sobre h5{
+    color: rgb(255, 255, 255);
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+
+.text-sobre p{
+    color: #ffffff;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+
+/* serviços */
+.serviços{
+    background-color: #1010;
+    width: 100%;
+    padding: 100px 0px;
+}
+
+.title h2{
+    color: #ffffff;
+    font-size: 75px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+}
+.caixa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+    flex-wrap: wrap;
+}
+
+.cards{
+    background-color: #6a68a675;
+    height: 365px;
+    width: 335px;
+    border-radius: 20px;
+    border: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+.cards i{
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color: #ffffff;
+}
+
+.cards h5{
+    color: #fff;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.cards span{
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom:5px;
+    padding: 10px;
+}
+
+/* tablet */
+/* serviços */
+@media (max-width: 1140px) {
+    
+header .menu {
+    width: 100vw;
+}
+    
+header{
+    height: 115vh;
+}
+
+.principal {
+    height: 100vh;
+}
+        
+.title h2 {
+    color: #ffffff;
+    font-size: 50px;
+    width: 100vw;
+    margin: 30px auto;
+    text-align: center;
+}
+
+/* sobre */
+.background img {
+    width: 300px;
+    height: auto;
+}
+
+.main-sobre {
+    width: 100vw;
+}
+
+.text-sobre {
+    margin: 10px;
+}
+
+.text-sobre h2{
+    font-size: 45px;
+}
+
+.text-sobre h5{
+    font-size: 18px;
+}
+
+.text-sobre p{
+    font-size: 15px;
+}
+
+/* Smatphone */
+/* serviços */
+@media (max-width: 728px) {
+header .menu {
+    width: 100vw;
+    height: auto;
+    min-width: 390px;
+}
+
+header{
+    height: 160vh;
+}
+
+.principal {
+    height: 100vh;
+}
+
+.serviços{
+    height: 100vh;
+}
+
+.title h2 {
+    color: #ffffff;
+    font-size: 30px;
+    width: 256px;
+}
+
+/* sobre */
+.background img {
+    display: none;
+}
+
+.main-sobre {
+    width: 100vw; 
+}
+
+.text-sobre {
+    margin: 10px;
+}
+.text-sobre h2{
+    font-size: 45px;
+}
+@media (max-width: 390px) {
+    header .menu .logo{
+        display: none;
+        height: 153vh;
+    }
+
+
+    
+        
+        
